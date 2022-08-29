@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="operation.gui_operation.HomePage">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="8" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="785" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="2ca61" binding="TabbedPane">
+        <constraints>
+          <grid row="0" column="0" row-span="8" col-span="9" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ceb97" binding="firstTab" layout-manager="GridLayoutManager" row-count="11" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="无标题"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="34da4" class="javax.swing.JRadioButton" binding="showAllRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Show All"/>
+                </properties>
+              </component>
+              <component id="3d6e9" class="javax.swing.JRadioButton" binding="findHighestRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Find Highest"/>
+                </properties>
+              </component>
+              <component id="cf67f" class="javax.swing.JRadioButton" binding="findLowestRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Find Lowest"/>
+                </properties>
+              </component>
+              <component id="caf9" class="javax.swing.JRadioButton" binding="confirmedCaseRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Confirmed Case"/>
+                </properties>
+              </component>
+              <component id="a78fc" class="javax.swing.JRadioButton" binding="deathCaseRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Death Case"/>
+                </properties>
+              </component>
+              <component id="32196" class="javax.swing.JRadioButton" binding="recoveredCaseRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Recovered Case"/>
+                </properties>
+              </component>
+              <component id="b32fa" class="javax.swing.JLabel" binding="showLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Please select the showing type."/>
+                </properties>
+              </component>
+              <grid id="fffef" binding="timePanel" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="2" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9215d" class="javax.swing.JRadioButton" binding="dailyCaseRadioButton">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Daily Sum"/>
+                    </properties>
+                  </component>
+                  <component id="274ba" class="javax.swing.JRadioButton" binding="weekCaseRadioButton">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Week Sum"/>
+                    </properties>
+                  </component>
+                  <component id="45c7c" class="javax.swing.JRadioButton" binding="monthCaseRadioButton">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Month Sum"/>
+                    </properties>
+                  </component>
+                  <component id="9a57a" class="javax.swing.JLabel" binding="timeLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Please select the time group."/>
+                    </properties>
+                  </component>
+                  <component id="7dcd7" class="javax.swing.JRadioButton" binding="allTimeRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="All Time"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="8f0bb" class="javax.swing.JLabel" binding="caseLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Please select the case type you want to show"/>
+                </properties>
+              </component>
+              <component id="9faa0" class="javax.swing.JButton" binding="showRecordButton" default-binding="true">
+                <constraints>
+                  <grid row="8" column="0" row-span="2" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Show Record"/>
+                </properties>
+              </component>
+              <component id="b486d" class="javax.swing.JComboBox" binding="countryBox">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="8afc9" class="javax.swing.JLabel" binding="countryLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Please select whether to show All country cases or specific country cases."/>
+                </properties>
+              </component>
+              <scrollpane id="88fc4" binding="scrollPane1">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="8" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="91a56" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="226a4" binding="secondTab" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="无标题"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="49e4d" class="javax.swing.JLabel" binding="orderLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Please the order of the records sorted based on cases."/>
+                </properties>
+              </component>
+              <component id="63978" class="javax.swing.JRadioButton" binding="ascendingOrderRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ascending Order"/>
+                </properties>
+              </component>
+              <component id="841cc" class="javax.swing.JRadioButton" binding="descendingOrderRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Descending Order"/>
+                </properties>
+              </component>
+              <component id="c4661" class="javax.swing.JRadioButton" binding="confirmedCaseRadioButton1" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Confirmed Case"/>
+                </properties>
+              </component>
+              <component id="5cb23" class="javax.swing.JButton" binding="showButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Show"/>
+                </properties>
+              </component>
+              <scrollpane id="da306">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="2759f" class="javax.swing.JTextPane" binding="prologPane">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="875d2" class="javax.swing.JLabel" binding="caseLabel2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Please select the case tyep you want to see."/>
+                </properties>
+              </component>
+              <component id="95010" class="javax.swing.JRadioButton" binding="deathCaseRadioButton1" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Death Case"/>
+                </properties>
+              </component>
+              <component id="75a67" class="javax.swing.JRadioButton" binding="recoveredCaseRadioButton1" default-binding="true">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Recovered Case"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="CaseType" bound="true">
+      <member id="b5be4"/>
+      <member id="8e4f3"/>
+      <member id="7b0f6"/>
+      <member id="caf9"/>
+      <member id="a78fc"/>
+      <member id="32196"/>
+    </group>
+    <group name="ShowType" bound="true">
+      <member id="41cbc"/>
+      <member id="ce9c0"/>
+      <member id="85bc1"/>
+      <member id="34da4"/>
+      <member id="3d6e9"/>
+      <member id="cf67f"/>
+    </group>
+    <group name="TimeGroup" bound="true">
+      <member id="43b2"/>
+      <member id="7abae"/>
+      <member id="f1f60"/>
+      <member id="b249b"/>
+      <member id="9215d"/>
+      <member id="274ba"/>
+      <member id="45c7c"/>
+      <member id="72afa"/>
+    </group>
+    <group name="OrderGroup" bound="true">
+      <member id="841cc"/>
+      <member id="841cc"/>
+      <member id="63978"/>
+    </group>
+    <group name="CaseType2" bound="true">
+      <member id="75a67"/>
+      <member id="75a67"/>
+      <member id="c4661"/>
+      <member id="95010"/>
+    </group>
+    <group name="buttonGroup1" bound="true">
+      <member id="7dcd7"/>
+    </group>
+  </buttonGroups>
+</form>
